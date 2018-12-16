@@ -1,0 +1,13 @@
+{
+  "moduleName": "IcehunterButton200",
+  "version": "2.0.0",
+  "manifest": {
+    "main.js": "http://localhost:3000/dist/2.0.0/button.27000ac71d88d4beffcc.js",
+    "runtime.js": "http://localhost:3000/dist/2.0.0/button.6730406e760617f1cec0.js",
+    "vendors.js": "http://localhost:3000/dist/2.0.0/button.c70be5803be536c86bc4.js",
+    "button.js.map": "http://localhost:3000/dist/2.0.0/button.c70be5803be536c86bc4.js.map"
+  },
+  "runtime": "http://localhost:3000/dist/2.0.0/button.6730406e760617f1cec0.js",
+  "main": "http://localhost:3000/dist/2.0.0/button.27000ac71d88d4beffcc.js",
+  "vendor": "http://localhost:3000/dist/2.0.0/button.c70be5803be536c86bc4.js"
+}

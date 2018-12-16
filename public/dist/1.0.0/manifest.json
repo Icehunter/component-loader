@@ -1,0 +1,6 @@
+{
+  "main.js": "http://localhost:3000/dist/1.0.0/button.1ba778fe30a934dde989.js",
+  "runtime.js": "http://localhost:3000/dist/1.0.0/button.31350d99fd9210ed9744.js",
+  "vendors.js": "http://localhost:3000/dist/1.0.0/button.48b336cd76e57a04bd2d.js",
+  "button.js.map": "http://localhost:3000/dist/1.0.0/button.48b336cd76e57a04bd2d.js.map"
+}

@@ -1,0 +1,90 @@
+{
+  "name": "@icehunter/component-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "lib/esm/index.js",
+  "typings": "lib/index.d.ts",
+  "author": "Ryan Wilson <syndicated.life@gmail.com> (https://syndicated.life/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Icehunter/component-loader.git"
+  },
+  "keywords": [
+    "material",
+    "gallery",
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/Icehunter/component-loader/issues"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "clean": "npm run clean:demo && npm run clean:lib",
+    "clean:demo": "rimraf build",
+    "clean:lib": "rimraf lib",
+    "start": "react-app-rewired start",
+    "build:demo": "npm run clean:demo && react-app-rewired build",
+    "build:lib": "npm run clean:lib && rollup -c rollup.config-lib.js",
+    "build": "npm run build:demo && npm run build:lib",
+    "lint": "tsc --noEmit && eslint --cache 'src/**/*.{js,ts,tsx}'",
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "react-app-rewired test"
+  },
+  "dependencies": {
+    "react-error-boundary": "^3.1.4",
+    "react-spinners": "^0.13.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@icehunter/eslint-config": "^1.2.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@types/node": "^18.6.1",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
+    "react-dev-utils": "^12.0.1",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.77.2",
+    "rollup-plugin-output-manifest": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-progress": "^1.1.2",
+    "rollup-plugin-styles": "^4.0.0",
+    "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "rollup-plugin-visualizer": "^5.7.1",
+    "typescript": "^4.6.4",
+    "web-vitals": "^2.1.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  }
+}
